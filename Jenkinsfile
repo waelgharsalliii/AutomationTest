@@ -1,11 +1,10 @@
 pipeline {
     agent any
-    stages {
-
-     stage('Récupération du code') {
-         steps {
-             checkout scm
-            }
+       stages {
+            stage('Récupération du code') {
+             steps {
+                 checkout scm
+                }
         
         stage('Build') { 
             steps {
@@ -13,4 +12,5 @@ pipeline {
             }
         }
     }
+}
 }
