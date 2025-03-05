@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
         } 
     } 
