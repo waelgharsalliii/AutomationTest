@@ -1,6 +1,6 @@
 package com.example.practiceautomation.bdd;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import java.time.Duration;
 import javax.xml.xpath.XPath;
 import org.openqa.selenium.By;
