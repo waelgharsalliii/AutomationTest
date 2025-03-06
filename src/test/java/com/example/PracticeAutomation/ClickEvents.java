@@ -35,6 +35,7 @@ public class ClickEvents {
 	  baseUrl = "https://practice-automation.com/";
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  js = (JavascriptExecutor) driver;
+	  driver.manage().window().maximize();
 	  }
 
    /* System.setProperty("webdriver.chrome.driver", "");
