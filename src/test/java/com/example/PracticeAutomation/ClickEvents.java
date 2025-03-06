@@ -27,8 +27,8 @@ public class ClickEvents {
   
   @Before
   public void setUp() throws Exception {
-	 // System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
-	WebDriverManager.chromedriver().setup();
+	  System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
+	//WebDriverManager.chromedriver().setup();
 
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("start-maximized");
