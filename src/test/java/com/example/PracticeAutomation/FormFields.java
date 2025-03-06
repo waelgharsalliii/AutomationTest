@@ -40,6 +40,7 @@ public class FormFields {
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("start-maximized");
 	  options.addArguments("--remote-allow-origins=*");
+	  options.addArguments("--headless");
 	  driver = new ChromeDriver(options);
 	  formFieldsPage=new FormFieldsPage(driver);
 	  baseUrl = "https://practice-automation.com/";
