@@ -52,7 +52,7 @@
     
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-devtools-v123</artifactId>
+    <artifactId>selenium-devtools-v134</artifactId>
     <version>4.16.1</version>  <!-- Match Selenium's version -->
 </dependency>
     
