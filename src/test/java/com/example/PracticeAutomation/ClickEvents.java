@@ -33,6 +33,7 @@ public class ClickEvents {
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("start-maximized");
 	  options.addArguments("--remote-allow-origins=*");
+	  options.addArguments("--headless");
 	  driver = new ChromeDriver(options);
 	  clickEventsPage=new ClickEventsPage(driver);
 	  baseUrl = "https://practice-automation.com/";
