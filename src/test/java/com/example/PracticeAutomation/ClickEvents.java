@@ -9,6 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import com.example.practiceautomation.po.ClickEventsPage;
 
@@ -26,7 +27,9 @@ public class ClickEvents {
   
   @Before
   public void setUp() throws Exception {
-	  System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
+	 // System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
+	WebDriverManager.chromedriver().setup();
+
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("start-maximized");
 	  options.addArguments("--remote-allow-origins=*");
